@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas' Portfolio</title>
+    <style>
+        /* Set the background color and text color for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: white;
+        }
+        /* Hero banner at the top of the page */
+        .hero {
+            width: 100%;
+            height: 250px;
+            background: url('hero-banner.jpg') no-repeat center center/cover;
+        }
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #111;
+            padding: 10px 0;
+        }
+        /* Dropdown menu container */
+        .dropdown {
+            position: relative;
+            margin: 0 15px;
+        }
+        /* Styling for dropdown buttons */
+        .dropdown button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        /* Hidden dropdown content (sub-menu items) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #444;
+            min-width: 150px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.2);
+        }
+        /* Links inside dropdown */
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        /* Change background color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background: #666;
+        }
+        /* Show dropdown content when hovering over the dropdown button */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Centering content with a max-width */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        /* Section styling */
+        .section {
+            margin-bottom: 20px;
+        }
+        /* Divider line between sections */
+        .divider {
+            height: 2px;
+            background: #777;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero banner section -->
+    <div class="hero"></div>
+    <!-- Navigation bar with dropdown menus -->
+    <nav class="navbar">
+        <div class="dropdown">
+            <button>Links</button>
+            <div class="dropdown-content">
+                <a href="index.html">Back to home page</a>
+                <a href="website.zip">File Download (ZIP)</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- First section with introduction -->
+        <div class="section">
+            <h2>About the project:</h2>
+            <p>Making this project was a difficult experience, since I had to learn HTML from scratch. I spent a week on W3schools learning the basics, and realising it was barely anything like python, and more like C</p>
+            <p>Below, I will go through the progression of making the website, and the problems I had.</p>
+            <p>The first problem i encountered, was making the website more than just a white screen with some text. I had to inspect element other websites to see how it was done properly, while cross referring to W3.</p>
+            <img src="media/skeleton.png" alt="Code Segment" width="100%">
+            <div class="divider"></div>
+            <p>The second issue i came into, was actually mking certain buttons work, dropdowns and properly linking to other pages. I got a hang of it after, and its quite useful to be able to, instead of cramping the home page.</p>
+            <img src="media/dropdown.png" alt="Code Segment" width="100%">
+            <div class="divider"></div>
+            <p>Thirdly, i wanted to put in images, and i had issues with the size, and the pop up box with the alt="" when the image wasnt available. After some tweaking, i managed to even find theres dividers, to neaten up the website.</p>
+            <img src="media/peeandgee.png" alt="Code Segment" width="100%">
+            <div class="divider"></div>
+            <p>A lot of things went somewhat smoothly after, I played with headers, font sizes, to make the website more easy on the eyes. i changed the background color, and had a container for all the pages.</p>
+            <img src="media/container.png" alt="Code Segment" width="100%">
+            <div class="divider"></div>
+            <p>And lastly, i had a lot of trouble with the typing effect. I looked up a youtube video on it, then asked for tips from chatgpt. then i made it header2 so it was a decent size.</p>
+            <img src="media/typewriter.png" alt="Code Segment" width="100%">
+            <div class="divider"></div>
+            <p>I'm quite proud of this website! Though, it feels bare bones, and leaves more to be desired. I hope to learn more!</p>
+        </div>
+        <!-- Divider between sections -->
+        <div class="divider"></div>
+        <!-- Contact section -->
+        <div class="section">
+            <h2>Contact Lucas</h2>
+            <p>My email address is <strong>lil.smol.cat.2@gmail.com</strong></p>
+        </div>
+    </div>
+</body>
+</html>

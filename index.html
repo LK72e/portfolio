@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas' Portfolio</title>
+    <style>
+        /* Set the background color and text color for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: white;
+        }
+        /* Hero banner at the top of the page */
+        .hero {
+            width: 100%;
+            height: 250px;
+            background: url('hero-banner.jpg') no-repeat center center/cover;
+        }
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #111;
+            padding: 10px 0;
+        }
+        /* Dropdown menu container */
+        .dropdown {
+            position: relative;
+            margin: 0 15px;
+        }
+        /* Styling for dropdown buttons */
+        .dropdown button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        /* Hidden dropdown content (sub-menu items) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #444;
+            min-width: 150px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.2);
+        }
+        /* Links inside dropdown */
+        .dropdown-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        /* Change background color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background: #666;
+        }
+        /* Show dropdown content when hovering over the dropdown button */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Centering content with a max-width */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #333;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        /* Section styling */
+        .section {
+            margin-bottom: 20px;
+        }
+        /* Divider line between sections */
+        .divider {
+            height: 2px;
+            background: #777;
+            margin: 20px 0;
+        }
+    </style>
+
+    <style>
+        .navbar {
+            display: flex;
+            gap: 10px;
+        }
+
+        .dropdown, .nav-button {
+            position: relative;
+        }
+
+        button {
+            padding: 10px 16px;
+            font-size: 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(191, 217, 236);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(211, 217, 238);   
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        </style>
+
+</head>
+<body>
+    <!-- Hero banner section -->
+    <div class="hero"></div>
+    <!-- Navigation bar with dropdown menu and a button -->
+    <nav class="navbar">
+        <div class="dropdown">
+            <button>Projects of Mine</button>
+            <div class="dropdown-content">
+                <a href="rpg.html">Text-Based RPG</a>
+                <a href="website.html">This Website!</a>
+            </div>
+        </div>
+
+        <!-- Simple button for Achievements -->
+        <div class="nav-button">
+            <button onclick="location.href='achievements.html'">Programmes and Achievements</button>
+        </div>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- First section with introduction -->
+        <div class="section">
+            <h2 id="typing-text" style="font-size: 32px;"></h2>
+                <script>
+                const text = "Heres my Portfolio!";
+                let index = 0;
+                const typingTextElement = document.getElementById("typing-text");
+
+                function typeWriter() {
+                    if (index < text.length) {
+                    typingTextElement.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(typeWriter, 125); // typing speed
+                    }
+                }
+
+                typeWriter(); // I LOVE UDF!!!
+                </script>
+            <h3>Hello there!</h3>
+            <p>I'm Lucas, a 16-year-old student who got into coding through a newfound passion in secondary school. That curiosity led me to take Computing for my ‘O’ Levels, where I discovered Python and how computers work behind the scenes.</p>
+            <p>I really enjoy the challenge of coding, the mix of frustration when things don’t work and excitement when I finally get my code to run properly. It’s super satisfying to solve problems and see my ideas come to life. Through this, I’ve realized that I want to pursue IT, especially software engineering, so I can keep building, learning, and creating cool stuff with technology.</p>
+            <img src="media/lucas-photo.jpg" alt="Lucas' Photo" width="100%">
+        </div>
+        
+        <!-- Divider between sections -->
+        <div class="divider"></div>
+        <!-- Contact section -->
+        <div class="section">
+            <h2>Contact Lucas</h2>
+            <p>My email address is <strong>lil.smol.cat.2@gmail.com</strong></p>
+        </div>
+    </div>
+</body>
+</html>
